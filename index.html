@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business Analyst Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      padding-top: 80px;
+    }
+
+    /* Navbar divider */
+    .navbar-nav .nav-divider {
+      width: 1px;
+      height: 25px;
+      background-color: #ccc;
+      margin: 0 15px;
+    }
+    @media (max-width: 991px) {
+      .navbar-nav .nav-divider {
+        display: none;
+      }
+    }
+
+    /* Hero Slider */
+    .hero-slider .carousel-item {
+      height: 100vh;
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .hero-slider .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    .hero-slider .carousel-caption {
+      z-index: 2;
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: auto;
+    }
+    .hero-slider h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      .hero-slider h1 {
+        font-size: 2rem;
+      }
+    }
+
+    /* Cards */
+    .service-card, .skill-card, .project-card, .contact-info {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#home">
+      <img src="https://via.placeholder.com/40" class="me-2">
+      Hina Saleem
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav mx-auto align-items-lg-center">
+
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#services">Business Analysis</a></li>
+            <li><a class="dropdown-item" href="#services">Data Analysis</a></li>
+            <li><a class="dropdown-item" href="#services">Reporting</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+
+        <li class="nav-divider d-none d-lg-block"></li>
+
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn-primary px-4">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero-slider">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+    <div class="carousel-indicators">
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active"
+        style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1920&q=80')">
+        <div class="overlay"></div>
+        <div class="carousel-caption text-center">
+          <h1 class="text-white">Business Analyst</h1>
+          <p class="text-white">Turning data into strategic insights</p>
+        </div>
+      </div>
+
+      <div class="carousel-item"
+        style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1920&q=80')">
+        <div class="overlay"></div>
+        <div class="carousel-caption text-center">
+          <h1 class="text-white">Strategic Planning</h1>
+          <p class="text-white">Data-driven decisions for growth</p>
+        </div>
+      </div>
+
+      <div class="carousel-item"
+        style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1920&q=80')">
+        <div class="overlay"></div>
+        <div class="carousel-caption text-center">
+          <h1 class="text-white">Dashboards & Reports</h1>
+          <p class="text-white">Clear KPIs & insights</p>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <span class="text-primary fw-semibold">About Me</span>
+        <h2 class="fw-bold mt-2">Hina Saleem</h2>
+        <p>
+          I am an MPhil student with a strong interest in Business Analysis.
+          I analyze business requirements, interpret data, and convert insights into solutions.
+          My focus is on reporting, stakeholder communication, and process improvement.
+          I work with data to support smart business decisions.
+        </p>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80"
+             class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Services</h2>
+    <div class="row g-4">
+      <div class="col-md-3"><div class="service-card p-4">Requirement Analysis</div></div>
+      <div class="col-md-3"><div class="service-card p-4">Data Analysis</div></div>
+      <div class="col-md-3"><div class="service-card p-4">Process Improvement</div></div>
+      <div class="col-md-3"><div class="service-card p-4">Reporting</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="project-card p-4">Sales Dashboard</div></div>
+      <div class="col-md-4"><div class="project-card p-4">Process Optimization</div></div>
+      <div class="col-md-4"><div class="project-card p-4">Business Reports</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <div class="contact-info p-4">
+          <h4>Contact Info</h4>
+          <p>Email: hina.saleem507@email.com</p>
+          <p>Phone: +92 300 4064700</p>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <form class="bg-white p-4 rounded shadow-sm">
+          <input class="form-control mb-3" placeholder="Name">
+          <input class="form-control mb-3" placeholder="Email">
+          <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+          <button class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

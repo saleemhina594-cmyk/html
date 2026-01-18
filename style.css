@@ -1,0 +1,128 @@
+<style>
+  /* ===== NAVBAR DIVIDER ===== */
+  .navbar-nav .nav-divider {
+    width: 1px;
+    height: 25px;
+    background-color: #ccc;
+    margin: 0 15px;
+  }
+
+  @media (max-width: 991px) {
+    .navbar-nav .nav-divider {
+      display: none;
+    }
+  }
+
+  /* ===== HERO SLIDER ===== */
+  .hero-slider .carousel-item {
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  /* Black Overlay */
+  .hero-slider .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  /* Center Content */
+  .hero-slider .carousel-caption {
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+
+  .hero-slider h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .hero-slider p {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero-slider h1 {
+      font-size: 2rem;
+    }
+  }
+</style><style>
+.about-section h2 {
+  font-size: 2.2rem;
+}
+
+.about-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+</style>
+<style>
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+</style>
+<style>
+.skill-card {
+  border: 2px solid #f1f1f1;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 8px 20px rgba(13,110,253,0.15);
+}
+</style>
+<style>
+.project-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.project-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+</style>
+<style>
+.contact-info {
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 8px;
+}
+</style>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
